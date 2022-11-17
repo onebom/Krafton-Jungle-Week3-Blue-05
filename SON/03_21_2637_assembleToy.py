@@ -4,7 +4,7 @@ input = sys.stdin.readline
 
 def topology_sort():
     queue = deque()
-    for i in range(n+1):
+    for i in range(1, n+1):
         if indgr[i] == 0:
             queue.append(i)
     while queue:
